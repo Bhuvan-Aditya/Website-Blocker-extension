@@ -1,0 +1,157 @@
+:root {
+  --primary: #6366f1; /* Indigo */
+  --success: #10b981; /* Emerald */
+  --danger: #ef4444;  /* Red */
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --text-dark: #1e293b;
+  --text-light: #64748b;
+}
+
+body {
+  width: 350px;
+  background-color: #e2e8f0;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.popup-container {
+  background-color: var(--bg-main);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header & Status */
+.header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+h1 { font-size: 1.1rem; margin: 0; color: var(--text-dark); }
+
+.status-pill {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: #cbd5e1;
+  color: #475569;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-active {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Clock Segment */
+.clock-segment {
+  background: #1e293b;
+  color: white;
+  border-radius: 12px;
+  padding: 20px 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#clock-time {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Monaco', monospace;
+  letter-spacing: -1px;
+}
+
+#clock-date {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+
+/* Whitelist Rows */
+.segment-box { margin-bottom: 15px; }
+.segment-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.link-row {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  padding: 4px 8px;
+}
+
+.link-row span {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  width: 15px;
+}
+
+.link-row input {
+  border: none;
+  width: 100%;
+  font-size: 0.85rem;
+  outline: none;
+  color: var(--text-dark);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 8px;
+  height: 40px;
+}
+
+.time-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0 8px;
+}
+
+#minutes {
+  width: 35px;
+  border: none;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+}
+
+.time-input-wrapper label { font-size: 0.7rem; color: #94a3b8; }
+
+button {
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+button:active { transform: scale(0.97); }
+
+.btn-start {
+  flex: 2;
+  background: var(--success);
+  color: white;
+}
+
+.btn-stop {
+  flex: 1;
+  background: #f1f5f9;
+  color: var(--danger);
+  border: 1px solid #fee2e2;
+}

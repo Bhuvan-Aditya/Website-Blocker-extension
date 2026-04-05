@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Flow Pro</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header>
+      <div class="header-line">
+        <h1>Focus Flow Pro</h1>
+        <span id="status-pill" class="status-pill">Ready</span>
+      </div>
+      <div class="clock-segment">
+        <div id="clock-time">00:00</div>
+        <div id="clock-date">April 5, 2026</div>
+      </div>
+    </header>
+
+    <div class="segment-box whitelist-segment">
+      <div class="segment-title">Approved Origins (Max 5)</div>
+      <div class="input-group">
+        <div class="link-row"><span>1</span><input type="url" class="allowed-link" placeholder="e.g. leetcode.com"></div>
+        <div class="link-row"><span>2</span><input type="url" class="allowed-link" placeholder="e.g. google.com"></div>
+        <div class="link-row"><span>3</span><input type="url" class="allowed-link" placeholder="e.g. github.com"></div>
+        <div class="link-row"><span>4</span><input type="url" class="allowed-link" placeholder="e.g. stackoverflow.com"></div>
+        <div class="link-row"><span>5</span><input type="url" class="allowed-link" placeholder="e.g. gsu.edu"></div>
+      </div>
+    </div>
+
+    <div class="segment-box settings-segment">
+      <div class="segment-title">Session Control</div>
+      <div class="controls">
+        <div class="time-input-wrapper">
+          <input type="number" id="minutes" value="25">
+          <label>min</label>
+        </div>
+        <button id="start" class="btn-start">Start Focus</button>
+        <button id="stop" class="btn-stop">Stop</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
